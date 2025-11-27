@@ -1,0 +1,33 @@
+const database = 'mekanbul';
+use(database);
+db.venues.insertOne(
+{
+  "name":  "ayga", 
+  "address": "cafe sokak No:3 Merkez/sivas",
+  "rating": 1,
+  "foodanddrink": [
+    "milkshake",
+    "espresso",
+    "cappuccino",
+    "mocha"
+  ],
+  "coordinates": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "12:00",
+      "close": "8:00",
+      "isClosed": false
+    },
+    {
+      "days": "Cumartesi-Pazar",
+      "open": "11:00",
+      "close": "17:00",
+      "isClosed": true
+    }
+  ]
+}
+ );
