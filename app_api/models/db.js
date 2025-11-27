@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dbURI ="mongodb://localhost/mekanbul";
+var dbURI ="mongodb+srv://test:test@cluster0.8ihpzyy.mongodb.net/mekanbul";
 mongoose.connect(dbURI);
 mongoose.connection.on('connected', function(){
     console.log('Mongoose connected to '+ dbURI);
